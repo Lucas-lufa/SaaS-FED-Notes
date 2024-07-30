@@ -238,3 +238,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#tailwindcss
+node_modules/
+package-lock.json
