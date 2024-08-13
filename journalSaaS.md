@@ -1,7 +1,10 @@
 ## four
 Topics Covered:
+Inheritance, class, namespace, auto loading and php data object. data name source 
 
-Inheritance, class
+The php basics was revision for me again but worth while. Being shown how to use the php data object(PDO) ,class or framework, was very informative. So far we have been shown create and read. I wanted to play with update and destroy but time got away from me.
+
+struggle is not using my time well, I wasn't able to redo last session.
 
 ## three
 Topics Covered:
