@@ -1,3 +1,18 @@
+## four
+Topics Covered:
+
+Inheritance, class
+
+## three
+Topics Covered:
+tailwind installation and using.
+
+php imports, functions, forms and action.
+
+For me most of this session was revision, which is good. The other part was understanding how php work, which was to hard to pick up because I have an understanding of some other programming languages.
+
+The struggles I had this week was keeping up with the typing in class but ok. Remembering to do the journal, I completely forgot about it and now am finding it difficult to remember what we did.
+
 ## two
 Topics Covered:
 
