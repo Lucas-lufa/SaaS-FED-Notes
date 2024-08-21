@@ -453,3 +453,5 @@ dist
 
 # Directories potentially created on remote AFP share
 
+!/.obsidian/
+
