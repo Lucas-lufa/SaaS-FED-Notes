@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# sets a rewrite condition - checks if file with filename is not there
+RewriteCond %{REQUEST_FILENAME} !-f 
+# condition - checks if a directory with name is not there
+RewriteCond %{REQUEST_FILENAME} !-d
+# 1:49:00
+# ^(.*$) is a regular expression, if the uri matches the regular expression then rewrite to match /index.php
+# in public /index.php will be front facing
+RewriteRule ^(.*)$ /index.php [NC,L,QSA]
+
+
+
