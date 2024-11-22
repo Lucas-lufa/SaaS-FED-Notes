@@ -7,10 +7,11 @@ auto-scaling: true
 size: 4k
 color: "#ccc"
 backgroundColor: "#060606"
-tags: SaaS, APIs, Back-End
-
+tags: SaaS, Front-End, MVC, Laravel, Framework, PHP, MySQL, MariaDB, SQLite, Testing, Unit Testing, Feature Testng, PEST
 date created: 03 July 2024
 date modified: 07 July 2024
+created: 2024-08-01T09:23
+updated: 2024-09-10T16:36
 ---
 
 # Course Journals
@@ -104,4 +105,4 @@ All entries should:
 
 # END
 
-Next up - [Session 01 Journal Activity](session-01/S01-Exercises-and-Journal-Entry.md)
+Next up - [Session 01 Journal Activity](../session-01/S01-Exercises-and-Journal-Entry.md)

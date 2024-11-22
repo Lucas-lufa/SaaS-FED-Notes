@@ -1,7 +1,12 @@
 {
-  "interfaceFontFamily": "Inter",
-  "textFontFamily": "Atkinson Hyperlegible",
+  "accentColor": "#007700",
+  "cssTheme": "Things",
   "monospaceFontFamily": "FiraCode Nerd Font",
-  "baseFontSize": 23,
-  "baseFontSizeAction": true
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "Trebuchet MS,Atkinson Hyperlegible",
+  "baseFontSize": 19,
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "CustomIcon-AutoGen"
+  ]
 }
