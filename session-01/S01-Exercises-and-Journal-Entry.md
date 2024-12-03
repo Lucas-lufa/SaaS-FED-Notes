@@ -31,3 +31,7 @@ When possible it is easier to mimic the same environment that we are using in cl
 
 PHP From Scratch
 - [Intro & Setup](https://www.traversymedia.com/products/php-from-scratch-beginner-to-advanced/categories/2154261435)
+
+https://www.youtube.com/watch?v=BUCiSSyIGGU
+https://www.apachefriends.org/download.html
+https://github.com/bradtraversy/php-crash.git
