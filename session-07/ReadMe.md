@@ -14,6 +14,8 @@ updated: 2024-09-10T16:36
 
 # Session 07
 
+1 08 25 git credential manager
+
 - [S07 Vanilla PHP MVC: Pt 0](session-07/S07-Vanilla-PHP-MVC-Pt-00.md)
 - [S07 Vanilla PHP MVC: Pt 1](session-07/S07-Vanilla-PHP-MVC-Pt-01.md)
 - [S07 Vanilla PHP MVC: Pt 2](session-07/S07-Vanilla-PHP-MVC-Pt-02.md)

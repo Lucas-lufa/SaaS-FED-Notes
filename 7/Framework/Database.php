@@ -1,4 +1,5 @@
-7<?php
+
+<?php
 /**
  * FILE TITLE GOES HERE
  *
@@ -14,7 +15,6 @@
  * Author:          Lucas
  *
  */
-
 namespace Framework;
 
 use Exception;  
@@ -24,32 +24,41 @@ use PDOException;
 
 class Database
 {
-    /**  
+
+/**
+ * connection property
+ * 
+ * @var PDO
+ *  */    
+public PDO $conn;
+
+ /**  
  * Constructor for Database class 
  * 
  * @param array $config  
  * @throws Exception
  */  
-public PDO $conn;
-public function __construct($config)  
-{  
-    $host =$config['host'];
-    $port = $config['port'];
-    $dbName = $config['dbname'];
+
+    public function __construct($config)  
+    {  
+        $host =$config['host'];
+        $port = $config['port'];
+        $dbName = $config['dbname'];
+        
+        // data source name
+        $dsn = "mysql:host={$host};port={$port};dbname={$dbName}";  
     
-    $dsn = "mysql:host={$host};port={$port};dbname={$dbName}";  
-  
-    $options = [  
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,  
-        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ  
-    ];  
-  
-    try {  
-        $this->conn = new PDO($dsn, $config['username'], $config['password'], $options);  
-    } catch (PDOException $e) {  
-        throw new Exception("Database connection failed: {$e->getMessage()}");  
-    }  
-}
+        $options = [  
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,  
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ  
+        ];  
+    
+        try {  
+            $this->conn = new PDO($dsn, $config['username'], $config['password'], $options);  
+        } catch (PDOException $e) {  
+            throw new Exception("Database connection failed: {$e->getMessage()}");  
+        }  
+    }
 
     /**
      * Query the database
@@ -69,18 +78,18 @@ public function __construct($config)
      * @return PDOStatement
      * @throws PDOException|Exception
      */
-public function query($query, $params = [])
+    public function query($query, $params = [])
     {
         try {
-            $sth = $this->conn->prepare($query);
+            $statement = $this->conn->prepare($query);
     
             // Bind named params
             foreach ($params as $param => $value) {
-                $sth->bindValue(':' . $param, $value);
+                $statement->bindValue(':' . $param, $value);
             }
     
-            $sth->execute();
-            return $sth;
+            $statement->execute();
+            return $statement;
         } catch (PDOException $e) {
             throw new Exception("Query failed to execute: {$e->getMessage()}");
         }

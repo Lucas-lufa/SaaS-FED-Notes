@@ -1,4 +1,6 @@
-namespace Framework
+<?php
+
+namespace Framework;
 
 class Authorisation
 {

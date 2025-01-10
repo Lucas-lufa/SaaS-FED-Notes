@@ -1,3 +1,9 @@
+<?php
+
+// need to change to universal
+namespace Framework\Middleware;
+use Framework\Session;
+
 class Authorise 
 {
     
