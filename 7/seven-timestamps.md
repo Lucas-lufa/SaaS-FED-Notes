@@ -1,3 +1,33 @@
+eight-timestamps
+
+2 55
+Change the tailwind so it doesn't look in the node module and vendor folders
+
+7 07
+composer install && composer update
+
+12 12
+npm install && npm update
+
+14 35
+for tailwind release use the --build instead of --watch
+
+17 00
+index.php
+
+26 30
+views/partials
+header
+
+30 10
+footer
+
+31 40
+navigation
+
+40 34 
+message
+
 1 24 09
 npm install -D tailwindcss
 installs tailwind form npm in developer mode.

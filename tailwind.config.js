@@ -1,4 +1,4 @@
-/*
+ /*
  * Filename: tailwind.config.js
  * Location: /
  */
@@ -7,7 +7,7 @@
 module.exports = {
     content: [
         "./src/**/*.{html,js}",
-        "./session-*/**/*.{html,js,php}"
+        "./7/{App, public, config, Framework}/**/*.{html,js,php}"
     ],
     theme: {
         extend: {},
