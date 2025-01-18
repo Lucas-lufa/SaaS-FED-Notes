@@ -28,6 +28,18 @@ navigation
 40 34 
 message
 
+43 07
+error
+
+46 00
+general views home and error
+
+52 10
+controllers
+HomeController
+1 01 20
+ErrorController
+
 1 24 09
 npm install -D tailwindcss
 installs tailwind form npm in developer mode.
