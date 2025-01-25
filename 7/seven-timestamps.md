@@ -39,7 +39,16 @@ controllers
 HomeController
 1 01 20
 ErrorController
+1 04 41
+UserController
 
+2 28 35
+Showing app
+
+2 33 48
+ProductController
+
+## 7
 1 24 09
 npm install -D tailwindcss
 installs tailwind form npm in developer mode.
