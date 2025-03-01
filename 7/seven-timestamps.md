@@ -1,5 +1,19 @@
 eight-timestamps
 
+<?php
+namespace App\views\products;
+
+loadPartial('header');
+loadPartial('navigation');
+?>
+
+        <?php loadPartial('errors', [
+            'errors' => $errors ?? []
+        ]) ?>
+
+<?php
+loadPartial('footer');
+
 2 55
 Change the tailwind so it doesn't look in the node module and vendor folders
 
@@ -47,6 +61,8 @@ Showing app
 
 2 33 48
 ProductController
+
+
 
 ## 7
 1 24 09
